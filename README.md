@@ -19,7 +19,7 @@
 # How to configure the bot
 ## You must complete two files that are
 ### ./src/Structure/Config/client
-```
+```js
 module.exports = {
     token: "Your token",
     prefix: "Your prefix",
@@ -28,7 +28,7 @@ module.exports = {
 }
 ```
 ### ./src/Structure/Config/embed
-```
+```js
 module.exports = {
     color: 'html color', //mandatory
     footer: 'Your message footer',
