@@ -1,8 +1,6 @@
 # Bot Introduction
 
 #### It’s a discord.js based utility bot.
-#### I based it on a cmd handler that [ramok](https://github.com/RamokTVL) made me.I added and updated something 
-
 
 # Bot resource
 
