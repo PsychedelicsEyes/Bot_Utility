@@ -40,7 +40,7 @@ module.exports = {
 # How to start the bot
 ### Lunch start.bat(windows) or start.sh(linux) in Lunch bot folder
 >### For windows if you have this is error
->>```
+```
 pm2: Unable to load C:\Users\AppData\Roaming\npm pm2.ps1, as script execution is disabled on this system. For more information, see about_Execution_Policies at 
 https://go.microsoft.com/fwlink/?LinkID=135170.
 At Line:1: 1
@@ -48,11 +48,11 @@ At Line:1: 1
 +~~~
     + CategoryInfo   : Security error: (:) [], PSSecurityException
     + FullyQualifiedErrorId: UnauthorizedAccess
-
+```
 >### Run powershell an admin and execute this command and access the windows request
->>```
+```
 Set-ExecutionPolicy RemoteSigned
-
+```
 >### And normally everything will be good
 ### I use the pm2 module which allows to run spots in the background so it will always stay on (be careful if you turn off your pc it will also turn off)
 
