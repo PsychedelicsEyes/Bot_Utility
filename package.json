@@ -12,6 +12,7 @@
     "ascii-table": "^0.0.9",
     "discord.js": "^13.6.0",
     "fs": "^0.0.1-security",
-    "mongoose": "^6.2.8"
+    "mongoose": "^6.2.8",
+    "pm2": "^5.2.0"
   }
 }
