@@ -37,10 +37,6 @@ module.exports = {
     //(If you use giphy please check that the gifs are well in public otherwise its will not work) 
 }
 ```
-
-# How to start the bot
-### Lunch start.bat(windows) or start.sh(linux) in Lunch bot folder
-
 # How to start the bot
 ### Lunch start.bat(windows) or start.sh(linux) in Lunch bot folder
 >### For windows if you have this is error
