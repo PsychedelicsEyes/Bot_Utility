@@ -37,8 +37,10 @@ module.exports = {
     //(If you use giphy please check that the gifs are well in public otherwise its will not work) 
 }
 ```
+### and launch update.bat(windows) or update.sh(linux)
+
 # How to start the bot
-### Lunch start.bat(windows) or start.sh(linux) in Lunch bot folder
+### Launch start.bat(windows) or start.sh(linux) in Lunch bot folder
 >### For windows if you have this is error
 ```
 pm2: Unable to load C:\Users\AppData\Roaming\npm pm2.ps1, as script execution is disabled on this system. For more information, see about_Execution_Policies at 
