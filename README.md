@@ -1,8 +1,6 @@
 # Bot Introduction
 
 #### It’s a discord.js based utility bot.
-#### I based it on a cmd handler that [ramok](https://github.com/RamokTVL) made me.I added and updated something 
-
 
 # Bot resource
 
@@ -22,7 +20,7 @@
 # How to configure the bot
 ## You must complete two files that are
 ### ./src/Structure/Config/client
-```
+```js
 module.exports = {
     token: "Your token",
     prefix: "Your prefix",
@@ -31,7 +29,7 @@ module.exports = {
 }
 ```
 ### ./src/Structure/Config/embed
-```
+```js
 module.exports = {
     color: 'html color', //mandatory
     footer: 'Your message footer',
