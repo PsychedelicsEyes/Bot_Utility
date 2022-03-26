@@ -15,13 +15,26 @@ module.exports = {
         if(older === null) {
             var older = "Aucun"
         } else {
-            var older = message.guild.channels.cache.get(older).name;
+            var older = message.guild.channels.cache.get(older).id;
         }
 
         if(args.length === 0) {
+            
+            if(older === null){
+                return;
+            } else {
+                const olderr = message.guild.model.logsChannelId
+                const channel = client.channels.cache.get(olderr);
+                const embed = new LeaftaEmbed()
+                .setAuthor({
+                    name: message.author.username ?? "Nom introuvable",
+                    iconURL: message.author.displayAvatarURL({dynamic: true}) ?? ""
+                })
+                .setTitle('Les logs ont bien été désactivé')
+                channel.send({ embeds: [embed] });
+            }
             const embed = new LeaftaEmbed()
-            .addFields({ name:'Update ModLog', value:`\`${older}\` -> \`Aucun\``})
-    
+            .addFields({ name:'Update ModLog', value:`<#${older}> -> \`Aucun\``})
             message.guild.model.logsChannelId = null;
             await message.guild.model.save();
             return message.channel.send({ embeds: [embed]})
@@ -48,7 +61,7 @@ module.exports = {
                 name: message.author.username ?? "Nom introuvable",
                 iconURL: message.author.displayAvatarURL({dynamic: true}) ?? ""
             })
-            .addFields({ name: 'Logs channel', value: `\`${older}\` -> \`${logs.name}\``})
+            .addFields({ name: 'Logs channel', value: `<#${older}> -> <#${logs.id}\>`})
             message.guild.model.logsChannelId = logs.id;
             await message.guild.model.save();
             message.guild.modlog({ embeds: [embed] })
