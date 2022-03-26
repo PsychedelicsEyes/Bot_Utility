@@ -4,7 +4,7 @@ module.exports = {
     name: "snipe",
     description: "Renvoie le dernier message du channel supprimé",
     cooldown: "5s",
-    usage: `snipe`,
+    usage: `\`snipe\``,
     execute: async(client, message, args) => {
  
         if(!client.sniper.has(message.channel.id)) {

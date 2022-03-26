@@ -9,7 +9,7 @@ module.exports = class LeaftaEmbed extends MessageEmbed {
 
         this.setColor(config.color);
         this.setFooter({text: config.footer});
-
+        this.setTimestamp()
         if (thumbnailActive == "true") {
             this.setThumbnail(config.thumbnail)
         }

@@ -4,7 +4,9 @@ const guildModel = require('../../models/guild.model');
 module.exports = {
     name: "setmodlog",
     description: "Permet de mettre en place les logs",
-    usage: `setmodlogs <id channel>`,
+    permisions: 'ADMINISTRATOR',
+    usage: `\`setmodlogs || <id channel>\``,
+
 
     execute: async(client, message, args) => {
 
@@ -41,11 +43,17 @@ module.exports = {
            
         } else {
             const embed = new LeaftaEmbed()
-            .addFields({ name: 'Update ModLog', value: `\`${older}\` -> \`${logs.name}\``})
-          
+            .setTitle('Modlog update')
+            .setAuthor({
+                name: message.author.username ?? "Nom introuvable",
+                iconURL: message.author.displayAvatarURL({dynamic: true}) ?? ""
+            })
+            .addFields({ name: 'Logs channel', value: `\`${older}\` -> \`${logs.name}\``})
             message.guild.model.logsChannelId = logs.id;
             await message.guild.model.save();
-            return message.channel.send({ embeds: [embed]});
+            message.guild.modlog({ embeds: [embed] })
+            return message.channel.send({ embeds: [embed]})
+            
 
         }
     }

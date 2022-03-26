@@ -4,7 +4,7 @@ module.exports = {
     name: "ping",
     description: "Envoie la latence du bot",
     cooldown: "20s",
-    usage: `ping`,
+    usage: `\`ping\``,
     execute: async(client, message, args) => {
         const embed = new LeaftaEmbed()
         embed.setTitle('Calcul du ping en cours..', '');

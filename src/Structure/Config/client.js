@@ -1,8 +1,8 @@
 module.exports = {
-    token: "Your token",
-    prefix: "Your prefix",
-    mongoURL: "Your url mongodb",
-    thumbnailActive: 'True or false' //If you want to activate the thumbnail on embeds messages
+    color: 'html color', //mandatory
+    footer: 'Your message footer',
+    thumbnail: 'Your gif or images link'
+    //(If you use giphy please check that the gifs are well in public otherwise its will not work) 
 }
 
 //Copyright PsychedelicsEyes

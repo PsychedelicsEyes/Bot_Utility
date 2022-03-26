@@ -13,6 +13,18 @@ module.exports.event = async(message) => {
    if(query) message.guild.model = query;
    let prefix = query != null ? query.prefix : config.prefix; 
 
+    message.guild.modlog = async(options) => {
+    if(!message.guild.model) return;
+    if(!message.guild.model.logsChannelId || message.guild.model.logsChannelId == null) return;
+    const channel = message.guild.channels.cache.get(message.guild.model.logsChannelId);
+    if(!channel) {
+     message.guild.model.logsChannelId = null;
+     await message.guild.model.save();
+     return;
+    } 
+    channel.send(options);
+    }
+    
     if(!message.content.startsWith(prefix) && !message.mentions.has(client.user.id)) {
         return;
     }  else if(message.mentions.has(client.user.id) && message.content.includes(client.user.id)) {
