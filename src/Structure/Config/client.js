@@ -7,6 +7,3 @@ module.exports = {
 
 //Copyright PsychedelicsEyes
 //Contact: PsychedelicsEyes.php#6978
-
-//Copyright PsychedelicsEyes
-//Contact: PsychedelicsEyes.php#6978
