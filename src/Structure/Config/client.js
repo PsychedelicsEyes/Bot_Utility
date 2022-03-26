@@ -2,7 +2,7 @@ module.exports = {
     token: "Your token",
     prefix: "Your prefix",
     mongoURL: "Your url mongodb",
-    thumbnailActive: 'If you want to activate the thumbnail on embeds messages' //true or false
+    thumbnailActive: 'True or false' //If you want to activate the thumbnail on embeds messages
 }
 
 //Copyright PsychedelicsEyes
