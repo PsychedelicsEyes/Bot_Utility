@@ -4,6 +4,7 @@ const LeaftaEmbed = require('../Structure/Client/Embed');
 const config = require('../Structure/Config/client');
 
 module.exports.event = async(message) => {
+    
     const client = message.client;
    message.content = message.content ?? "";
    if(message.channel.type.toLowerCase() == "dm") return;

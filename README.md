@@ -16,6 +16,7 @@
 * ### Fs
 * ### Mongoose
 * ### PM2
+* ### Moment
 
 # How to configure the bot
 ## You must complete two files that are

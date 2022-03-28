@@ -4,7 +4,7 @@ const guildModel = require('../../models/guild.model');
 module.exports = {
     name: "setmodlog",
     description: "Permet de mettre en place les logs",
-    permisions: 'ADMINISTRATOR',
+    permisions: ['ADMINISTRATOR'],
     usage: `\`setmodlogs || <id channel>\``,
 
 

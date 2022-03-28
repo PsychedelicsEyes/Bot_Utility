@@ -6,7 +6,7 @@ module.exports = {
     description: "Permet de changer le prefix du bot",
     cooldown: "20s",
     usage: `\`setprefix <prefix>\``,
-    permissions: 'MANAGE_CHANNELS',
+    permissions: ['MANAGE_CHANNELS'],
     args: {
         minimum: 1,
         text: "Il faut un argument"
