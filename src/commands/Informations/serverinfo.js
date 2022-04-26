@@ -5,7 +5,7 @@ module.exports = {
     name: "serverinfo",
     description: "Envoie des informations du serveur",
     cooldown: "20s",
-    usage: `\`serverinfo\``,
+    usage: `serverinfo`,
     execute: async(client, message, args) => {
 
         const createdDate = moment(message.guild.createdAt).format('DD/MM/YYYY')

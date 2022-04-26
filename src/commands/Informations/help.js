@@ -5,7 +5,7 @@ const ms = require("ms");
 module.exports = {
     name: "help",
     description: "Cette commande vous aidera à utiliser le bot",
-    usage: `\`help || (cmd)\``,
+    usage: `help || (cmd)`,
     execute: async(client, message, args) => {
 
         if(args.length != 0) {

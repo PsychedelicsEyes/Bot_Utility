@@ -1,23 +1,9 @@
-const guildModel = require("../models/guild.model");
 const LeaftaEmbed = require("../Structure/Client/Embed");
 
 module.exports.event = async(message) => {
     if(message.author.bot) return;
 
-    message.client.sniper.set(message.channel.id, {
-        author: message.author,
-        content: message.content,
-        embed: message.embeds
-    })
 
-    const query = await guildModel.findById(message.guild.id).exec();
-    if(!query) return;
-    const channel = message.guild.channels.cache.get(query.logsChannelId);
-    if(!channel) {
-        query.logsChannelId = "";
-     await query.save();
-     return;
-    }
     const embed = new LeaftaEmbed()
     .setTitle('Message Supprimé')
     .setAuthor({
@@ -29,9 +15,13 @@ module.exports.event = async(message) => {
         {name: 'Contenue du message', value: `${message.content ?? "Aucun contenue trouvé"}`},
         {name: 'Channel', value: `<#${message.channel.id ?? "Channel Introuvable"}>`}
     )
-    channel.send({embeds: [embed]})
-    
+    message.guild.modlog({embeds: [embed]})
 
+    message.client.sniper.set(message.channel.id, {
+        author: message.author,
+        content: message.content,
+        embed: message.embeds
+    })
     
 
 }

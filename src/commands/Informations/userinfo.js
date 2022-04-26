@@ -4,7 +4,7 @@ const moment = require('moment')
 module.exports = {
     name: "userinfo",
     description: "Envoie des informations sur un user",
-    usage: `\`userinfo || <@mention>\``,
+    usage: `serinfo || <@mention>`,
     execute: async(client, message, args) => {
 
        const member = message.mentions.users.first();

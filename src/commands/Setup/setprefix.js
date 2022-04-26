@@ -5,7 +5,7 @@ module.exports = {
     name: "setprefix",
     description: "Permet de changer le prefix du bot",
     cooldown: "20s",
-    usage: `\`setprefix <prefix>\``,
+    usage: `setprefix <prefix>`,
     permissions: ['MANAGE_CHANNELS'],
     args: {
         minimum: 1,
@@ -35,8 +35,10 @@ module.exports = {
             .addFields(
                 { name: 'Modifié par:', value: `<@${message.author.id}>`}
             );
-            message.channel.send({ embeds: [embed] })   
+            message.channel.send({ embeds: [embed] }) 
+            if (message.guild.modlog != null){ 
             message.guild.modlog({ embeds: [embed] })
+            }
         }
 
     
