@@ -3,6 +3,7 @@ const LeaftaEmbed = require('../../Structure/Client/Embed')
 module.exports = {
     name: "clear",
     description: "Permet de supprimer jusqu'à 99 messages",
+    permissons: "MANAGE_MESSAGE",
     cooldown: "5s",
     usage: `clear <amount>`,
     execute: async(client, message, args) => {

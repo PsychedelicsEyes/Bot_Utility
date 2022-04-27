@@ -5,7 +5,7 @@ module.exports = {
     name: "addemoji",
     description: "Permet d'ajouter des émojis au serveur",
     cooldown: "5s",
-    permissons: ["MANAGE_EMOJIS"],
+    permissons: "MANAGE_EMOJIS",
     usage: `addemoji :emoji:`,
     execute: async(client, message, args) => {
 

@@ -27,6 +27,7 @@ module.exports = {
     token: "Your token",
     prefix: "Your prefix",
     mongoURL: "Your url mongodb",
+    owner: 'Your id',
     thumbnailActive: 'True or false' //If you want to activate the thumbnail on embeds messages
 }
 ```

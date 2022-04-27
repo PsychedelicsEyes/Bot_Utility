@@ -3,7 +3,7 @@ const LeaftaEmbed = require('../../Structure/Client/Embed');
 module.exports = {
     name: "setmodlogs",
     description: "Permet de mettre en place les logs",
-    permisions: ['ADMINISTRATOR'],
+    permisions: 'ADMINISTRATOR',
     usage: `setmodlogs || <id channel>`,
 
 

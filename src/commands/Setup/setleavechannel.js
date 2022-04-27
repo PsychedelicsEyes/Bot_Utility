@@ -3,7 +3,7 @@ const LeaftaEmbed = require('../../Structure/Client/Embed')
 module.exports = {
     name: "setleavechannel",
     description: "Permet de mettre en place le système d'arriver",
-    permisions: ['ADMINISTRATOR'],
+    permisions: 'ADMINISTRATOR',
     cooldown: "5s",
     usage: `setleavechannel || <id channel>`,
     execute: async(client, message, args) => {

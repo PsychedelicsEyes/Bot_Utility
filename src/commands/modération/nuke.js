@@ -5,7 +5,7 @@ module.exports = {
     name: "nuke",
     description: "Permet de recréez un channel",
     cooldown: "5s",
-    permissons: ["MANAGE_CHANNELS"],
+    permissons: "MANAGE_CHANNELS",
     usage: "nuke",
     execute: async(client, message, args) => {
         

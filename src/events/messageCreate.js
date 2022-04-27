@@ -45,6 +45,10 @@ module.exports.event = async(message) => {
    if(!cmd) cmd = client.commands.get(client.aliases.get(command));
    if(!cmd) return;
 
+   if(cmd.ownerOnly == true && config.owner != message.author.id) {
+    return message.channel.send({content: "Vous ne pouvez pas utiliser cette commande."}).catch();
+   }
+
    if(cmd.args) {
         if(!cmd.args.minimum && !Number.isInteger(cmd.args.minimum)) return;
         if(cmd.args.default) {
@@ -69,7 +73,7 @@ module.exports.event = async(message) => {
                 return message.channel.send(`Il me manque la permission \`${cmd.permissions}\``);
             } else if(!message.member.permissions.has(cmd.permissions)) {
                 if(message.guild.ownerId != message.author.id) {
-                    return message.channel.send(`Il te manque la permission \`${cmd.permissions}\``);
+                    return message.channel.send(`Il vous manque la permission \`${cmd.permissions}\``);
                 }
                    
             }
