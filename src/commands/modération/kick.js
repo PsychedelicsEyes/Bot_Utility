@@ -44,13 +44,14 @@ module.exports = {
         } else {
             
             const embed = new LeaftaEmbed()
-            .setTitle(`${member} a été expulser avec succès`)
+            .setDescription(`${member} a été expulser avec succès`)
             message.channel.send({ embeds: [embed] })
 
             if (message.guild.modlog != null){
                 const embeds = new LeaftaEmbed()
                 .setTitle('Membre kick')
                 .addFields({name: `Modérateur`, value: `${message.member}`})
+                .addFields({name: `Membre kick`, value: `${member.tag}`})
                 .addFields({name: `Raison`, value: `${reason}`})
                 message.guild.modlog({ embeds: [embeds] })
             }
