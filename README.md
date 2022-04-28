@@ -18,6 +18,8 @@
 * ### PM2
 * ### Moment
 * ### Ms
+* ### Canvas
+* ### Discord-giveaways
 
 # How to configure the bot
 ## You must complete two files that are
