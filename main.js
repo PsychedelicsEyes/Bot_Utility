@@ -1,5 +1,4 @@
 const LeaftaClient = require('./src/Structure/Client/Client');
-const fs = require('fs');
 const client = new LeaftaClient();
 
 process.on("uncaughtException", (error, origin) => {
