@@ -1,28 +1,28 @@
-# Bot Introduction
+# 🎈 Bot Introduction
 
 #### It’s a discord.js based utility bot.
 
-# Bot resource
-
-## Database:
+# ✨ Bot ressource
+## 🔑 Database:
 * ### MongoDB
 
-## Programming language:
+## 💻 Programming language:
 * ### Js
 
-## Library used:
-* ### Discord.js (v13)
-* ### Table ascii
-* ### Fs
-* ### Mongoose
-* ### PM2
-* ### Moment
-* ### Ms
-* ### Canvas
-* ### Discord-giveaways
+## 🔩 Library used:
+* ### [Discord.js(v13)](https://www.npmjs.com/package/discord.js)
+* ### [Ascii table](https://www.npmjs.com/package/ascii-table)
+* ### [Fs](https://www.npmjs.com/package/fs)
+* ### [Mongoose](https://www.npmjs.com/package/mongoose)
+* ### [PM2](https://www.npmjs.com/package/pm2)
+* ### [Moment](https://www.npmjs.com/package/moment)
+* ### [Ms](https://www.npmjs.com/package/ms)
+* ### [Canvas](https://www.npmjs.com/package/canvas)
+* ### [Discord-giveaways](https://www.npmjs.com/package/discord-giveaways)
+* ### [Node-fetch](https://www.npmjs.com/package/node-fetch)
 
-# How to configure the bot
-## You must complete two files that are
+# 🛠 How to configure the bot
+## ❗ You must complete two files that are
 ### ./src/Structure/Config/client
 ```js
 module.exports = {
@@ -44,7 +44,7 @@ module.exports = {
 ```
 ### and launch update.bat(windows) or update.sh(linux)
 
-# How to start the bot
+# ⚙ How to start the bot
 ### Launch start.bat(windows) or start.sh(linux) in Lunch bot folder
 >### For windows if you have this is error
 ```
@@ -65,7 +65,8 @@ Set-ExecutionPolicy RemoteSigned
 
 
 
-# End of the readme
-### The bot was made with the heart so please don’t appropriate the code.It will be updated often.
+# 🏴 End of the readme
+### The bot was made with ❤
+### Don’t appropriate the code.It will be updated often. 
 ### My contact: PsychedelicsEyes.php#6978
 ### Discord server: discord.gg/punchnox

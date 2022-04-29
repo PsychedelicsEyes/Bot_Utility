@@ -51,7 +51,7 @@ module.exports = {
                 const embeds = new LeaftaEmbed()
                 .setTitle('Membre kick')
                 .addFields({name: `Modérateur`, value: `${message.member}`})
-                .addFields({name: `Membre kick`, value: `${member.tag}`})
+                .addFields({name: `Membre kick`, value: `${member}`})
                 .addFields({name: `Raison`, value: `${reason}`})
                 message.guild.modlog({ embeds: [embeds] })
             }
